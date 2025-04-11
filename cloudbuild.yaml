@@ -11,3 +11,6 @@ steps:
   args: ['run', 'deploy', 'app-mod-workshop', '--image', 'us-central1-docker.pkg.dev/app-mod-workshop01/cloud-run-source-deploy/app-mod-workshop', '--region', 'us-central1']
 images:
 - 'us-central1-docker.pkg.dev/app-mod-workshop01/cloud-run-source-deploy/app-mod-workshop'
+options:
+  substitutionOption: ALLOW_LOOSE
+  logging: CLOUD_LOGGING_ONLY
